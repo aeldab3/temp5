@@ -178,7 +178,7 @@ function randomizeImgs() {
       let randomNumber = Math.floor(Math.random() * imgsArray.length);
       // Change Background Image URl after 5 sec
       landingPage.style.backgroundImage =
-        'url("/images/' + imgsArray[randomNumber] + '")';
+        'url("images/' + imgsArray[randomNumber] + '")';
     }, 3000);
   }
 }
