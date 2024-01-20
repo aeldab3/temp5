@@ -163,12 +163,12 @@ randomBackEL.forEach((span) => {
 let landingPage = document.querySelector(".landing-page");
 // Array of Images
 let imgsArray = [
-  "project-1.jpg",
-  "project-2.jpg",
-  "project-3.png",
-  "project-4.png",
-  "project-5.jpg",
-  "project-6.png",
+  "background1.jpg",
+  "background2.jpg",
+  "background3.jpg",
+  "background4.jpg",
+  "background5.jpg",
+  "background6.jpg",
 ];
 // Function To Randomize Imgs
 function randomizeImgs() {
