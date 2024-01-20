@@ -15,12 +15,12 @@ const allLinks = document.querySelectorAll(".links a");
 
 // Scroll to Position Function
 function scrollToPosition(elements) {
-elements.forEach((ele)=> {
-  ele.addEventListener("click", (e)=> {
-    e.preventDefault();
-    document.querySelector(e.target.dataset.section).scrollIntoView({behavior: "smooth"})
+  elements.forEach((ele) => {
+    ele.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelector(e.target.dataset.section).scrollIntoView({ behavior: "smooth" })
+    });
   });
-});
 }
 scrollToPosition(allBullets);
 scrollToPosition(allLinks);
@@ -163,11 +163,12 @@ randomBackEL.forEach((span) => {
 let landingPage = document.querySelector(".landing-page");
 // Array of Images
 let imgsArray = [
-  "lionel-messi-1.jpg",
-  "lionel-messi-2.jpg",
-  "lionel-messi-3.jpg",
-  "lionel-messi-4.jpg",
-  "lionel-messi-5.jpg",
+  "project-1.jpg",
+  "project-2.jpg",
+  "project-3.png",
+  "project-4.png",
+  "project-5.jpg",
+  "project-6.png",
 ];
 // Function To Randomize Imgs
 function randomizeImgs() {
@@ -179,7 +180,7 @@ function randomizeImgs() {
       // Change Background Image URl after 5 sec
       landingPage.style.backgroundImage =
         'url("images/' + imgsArray[randomNumber] + '")';
-    }, 3000);
+    }, 5000);
   }
 }
 randomizeImgs();
@@ -235,11 +236,11 @@ ourGallery.forEach((img) => {
     closeButton.appendChild(closeButtonText);
     closeButton.className = "close-button";
     popupBox.appendChild(closeButton);
-  
+
     // Close Popup and Overlay When Clicking Outside Popup Box
-    overlay.addEventListener("click", ()=> {
-       popupBox.remove();
-       overlay.remove();
+    overlay.addEventListener("click", () => {
+      popupBox.remove();
+      overlay.remove();
     });
   });
 });

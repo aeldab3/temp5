@@ -15,17 +15,21 @@
   padding: 0;
   margin: 0;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   width: 15px;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #fff;
   border-radius: var(--border-radius-main);
 }
+
 ::-webkit-scrollbar-thumb {
- background-color: var(--main-color);
- border-radius: var(--border-radius-main);
+  background-color: var(--main-color);
+  border-radius: var(--border-radius-main);
 }
+
 /* Start Grid System */
 /* Small */
 @media (min-width: 576px) {
@@ -251,7 +255,7 @@ body {
 /* Start Landing */
 .landing-page {
   min-height: 100vh;
-  background-image: url(../images/lionel-messi-1.jpg);
+  background-image: url(../images/project-1.jpg);
   background-size: cover;
   position: relative;
   background-position: center;
@@ -266,10 +270,12 @@ body {
   top: 0;
   z-index: 1;
 }
+
 .landing-page .container {
   position: relative;
   z-index: 118;
 }
+
 .landing-page .header-area {
   position: relative;
   z-index: 2;
@@ -315,7 +321,7 @@ body {
 .landing-page .header-area .toggle-menu {
   background: none;
   border: none;
-  width: 40px;
+  width: 30px;
   cursor: pointer;
   margin-top: 15px;
   display: none;
@@ -381,11 +387,12 @@ body {
   position: absolute;
   z-index: 2;
   left: 50%;
-  top: 54%;
+  top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   width: 95%;
+  user-select: none;
 }
 
 .introduction-text h1 {
@@ -427,6 +434,7 @@ body {
 .about-us .info-box {
   flex: 1;
   padding: 30px;
+  user-select: none;
 }
 
 @media (max-width: 767px) {
@@ -544,16 +552,19 @@ body {
   margin: 5px;
   cursor: pointer;
 }
-@media (max-width: 575px)  {
+
+@media (max-width: 575px) {
   .gallery .images-box img {
     width: 60%;
     height: 60%;
   }
+
   .popup-box {
     width: 80%;
     height: 50%;
   }
 }
+
 .popup-overlay {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
@@ -851,7 +862,7 @@ body {
   margin-right: 1%;
 }
 
-.testimonials .ts-box > p {
+.testimonials .ts-box>p {
   font-style: italic;
   color: var(--p-color);
   line-height: 1.6;
@@ -865,6 +876,7 @@ body {
 
 .testimonials .ts-box .person-info img {
   width: 70px;
+  height: 70px;
   border-radius: var(--border-radius-half);
   float: left;
   margin-right: 20px;
@@ -882,7 +894,7 @@ body {
 
 @media (max-width: 991px) {
   .testimonials .ts-box {
-    height: 280px;
+    height: 290px;
     text-align: center;
   }
 
@@ -994,11 +1006,13 @@ body {
 .contact form textarea:focus {
   outline: 1px solid var(--main-color);
 }
+
 .contact form input:not([type="submit"]):focus::placeholder,
 .contact form textarea:focus::placeholder {
-opacity: 0;
-transition: 0.3s;
+  opacity: 0;
+  transition: 0.3s;
 }
+
 .contact form input {
   height: 40px;
 }
