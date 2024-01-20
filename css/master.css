@@ -457,13 +457,12 @@ body {
 }
 
 .about-us .img-box {
-  flex: 1;
   text-align: center;
 }
 
 .about-us .img-box img {
   margin-top: 20px;
-  width: 160px;
+  width: 170px;
 }
 
 /* End About Us */
